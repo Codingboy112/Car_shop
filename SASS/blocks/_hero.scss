@@ -5,90 +5,137 @@
 
 .hero {
   margin-top: 40px;
-  .hero__holder{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+}
+
+.hero__holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+}
+
+.wrapper__holder {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.hero__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__first {
+  .hero__text {
+    color: $text-color;
+    font-weight: 600;
+    font-size: 20px;
   }
-  .wrapper__holder{
+  .hero__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0px;
+    color: $text-color;
+  }
+  .hero__price {
+    color: $second-text;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .hero__btns {
+    margin-top: 20px;
+    display: flex;
+    gap: 1px;
+    margin-bottom: 10px;
+    .hero__btn {
+      background-color: black;
+      padding: 10px 14px;
+      border: none;
+      font-size: 10px;
+      color: white;
+      .hero__btn--red {
+        color: $second-text;
+      }
+    }
+    .hero__btn_1 {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .hero__btn_3 {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .hero__addition-text {
+    font-size: 12px;
+  }
+}
+
+.hero__second {
+  max-width: 100%;
+  height: auto;
+  background-image: url("../../assets/hero__cars.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 16 / 9;
+}
+
+.carousel__dots {
+  display: flex;
+  place-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.car__dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.car__dot--black {
+  background-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__wrapper {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .hero__second {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .wrapper__holder {
+    width: 100%;
     display: inline-block;
     margin: 0 auto;
   }
+
+@media only screen and (min-width: 1200px) {
   .hero__wrapper {
+    flex-direction: row;
     width: 100%;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .hero__second {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .wrapper__holder {
+    width: 100%;
+    display: inline-block;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    .hero__first {
-      .hero__text {
-        color: $text-color;
-        font-weight: 600;
-        font-size: 20px;
-      }
-      .hero__title {
-        font-size: 30px;
-        font-weight: 700;
-        margin: 10px 0px;
-        color: $text-color;
-      }
-      .hero__price {
-        color: $second-text;
-        font-weight: 600;
-        font-size: 20px;
-      }
-      .hero__btns {
-        margin-top: 20px;
-        display: flex;
-        gap: 1px;
-        margin-bottom: 10px;
-        .hero__btn {
-          background-color: black;
-          padding: 10px 14px;
-          border: none;
-          font-size: 10px;
-          color: white;
-          .hero__btn--red {
-            color: $second-text;
-          }
-        }
-        .hero__btn_1 {
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
-        }
-        .hero__btn_3 {
-          border-top-right-radius: 5px;
-          border-bottom-right-radius: 5px;
-        }
-      }
-      .hero__addition-text {
-        font-size: 12px;
-      }
-    }
-    .hero__second {
-      max-width: 100%;
-      height: auto;
-      background-image: url("../../assets/hero__cars.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      aspect-ratio: 16 / 9;
-    }
   }
-  .carousel__dots {
-    display: flex;
-    place-content: center;
-    margin-top: 10px;
-    gap: 10px;
-    .car__dot {
-      width: 10px;
-      height: 10px;
-      display: inline-block;
-      border-radius: 50%;
-      background-color: gray;
-    }
-    .car__dot--black {
-      background-color: black;
-    }
-  }
+}
 }

@@ -1,0 +1,84 @@
+.select {
+  width: 100%;
+  padding: 20px;
+  background: url("../../assets/lines__select.png"), black;
+  background-size: cover;
+  margin-top: 80px;
+  color: white;
+  .select__holder {
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .select__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 37.5px;
+  }
+  .select__btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 13px;
+    font-size: 14px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  .select__btn--white {
+    background-color: white;
+    color: $second-text;
+  }
+  .select__bottom {
+    margin-top: 20px;
+    text-align: center;
+    .select__inputs {
+      width: 100%;
+      margin-bottom: 5px;
+      padding: 14px 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .select__submit {
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      background-color: $second-text;
+      padding: 10px 10px;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .select .select__holder {
+    width: 70%;
+  }
+  .select .select__bottom .select__submit {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .select .select__bottom .select__submit {
+
+  height: 45px;
+  display: inline-block;
+  }
+  .select .select__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .select .select__bottom{
+    display: flex;
+    gap: 10px;
+  }
+
+@media only screen and (min-width: 1500px) {
+ .select__holder{
+    width: 55%;
+ }
+}
+}

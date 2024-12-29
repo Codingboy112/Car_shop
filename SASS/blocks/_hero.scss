@@ -5,8 +5,17 @@
 
 .hero {
   margin-top: 40px;
+  .hero__holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper__holder{
+    display: inline-block;
+    margin: 0 auto;
+  }
   .hero__wrapper {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

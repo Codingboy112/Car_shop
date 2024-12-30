@@ -350,4 +350,34 @@ a {
   .select__holder {
     width: 55%;
   }
+}
+.brands {
+  margin-top: 60px;
+}
+.brands .brands__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+  width: 70%;
+}
+.brands .brands__wrapper .brand {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  place-content: center;
+  text-align: center;
+  font-size: 10px;
+}
+.brands .brands__wrapper .brand img {
+  margin-bottom: 10px;
+}
+.brands .brands__wrapper .brand:nth-child(-n+16) {
+  display: none;
+}
+
+@media only screen and (min-width: 786px) {
+  .brands .brands__wrapper .brand:nth-child(-n+4) {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -28,7 +28,18 @@
 }
 
 @media only screen and (min-width: 786px) {
-.brands .brands__wrapper .brand:nth-child(-n+4) {
-  display: inline-block;
-}
+  .brands .brands__wrapper .brand:nth-child(-n + 4) {
+    display: inline-block;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .brands .brands__wrapper .brand:nth-child(-n + 10) {
+      display: inline-block;
+    }
+  }
+  @media only screen and (min-width: 1572px) {
+    .brands .brands__wrapper .brand:nth-child(-n + 16) {
+      display: inline-block;
+    }   
+  }
 }

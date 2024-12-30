@@ -380,4 +380,100 @@ a {
   .brands .brands__wrapper .brand:nth-child(-n+4) {
     display: inline-block;
   }
+}
+@media only screen and (min-width: 786px) and (min-width: 1200px) {
+  .brands .brands__wrapper .brand:nth-child(-n+10) {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 786px) and (min-width: 1572px) {
+  .brands .brands__wrapper .brand:nth-child(-n+16) {
+    display: inline-block;
+  }
+}
+.order {
+  width: 87%;
+  background: url("../assets/lines__select.png"), black;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  margin-top: 70px;
+}
+.order .order__title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 37.5px;
+}
+.order .order__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin: 10px 0px;
+}
+.order .order__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.order .order__wrapper .order__inputs {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: none;
+}
+.order .order__wrapper .order__submit {
+  width: 100%;
+  padding: 13px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #DC4433;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.order .checkbox {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.order .checkbox .order__permission {
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .order {
+    width: 60%;
+  }
+  .order .order__wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1200px) {
+  .order .order__wrapper .order__submit {
+    width: 20%;
+  }
+  .order .order__wrapper .order__inputs {
+    width: 20%;
+  }
+  .order .order__wrapper .order__inputs {
+    padding: 10px;
+  }
+  .order {
+    width: 80%;
+  }
+  .order .order__wrapper {
+    flex-direction: row;
+  }
+  .checkbox__holder {
+    display: flex;
+    justify-content: end;
+  }
+  .checkbox__holder .checkbox {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1400px) {
+  .order {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */

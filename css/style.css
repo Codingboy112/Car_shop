@@ -476,4 +476,114 @@ a {
   .order {
     width: 70%;
   }
+}
+.official {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 60px;
+  padding: 25px;
+}
+.official .official__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.official .official__wrapper .official__card {
+  padding: 10px;
+  border: 2px solid #C7C7C7;
+  border-radius: 4px;
+}
+.official .official__wrapper .official__card img {
+  min-width: 350px;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.official .official__wrapper .official__card .official__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  margin: 10px 0px;
+}
+.official .official__wrapper .official__card .official__condition {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  margin-bottom: 7px;
+}
+.official .official__wrapper .official__card .conditionals__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px 0px;
+}
+.official .official__wrapper .official__card .condition {
+  color: #424242;
+}
+.official .official__wrapper .official__card .condition--black {
+  color: black;
+}
+.official .official__wrapper .official__card .condition__buy {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #DC4433;
+}
+
+.seeking__text {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.seeking__text .seeking__wrapper {
+  display: flex;
+}
+
+@media only screen and (min-width: 310px) {
+  .official .official__wrapper .official__card img {
+    min-width: 200px;
+  }
+  .seeking__text {
+    width: 90%;
+  }
+  .seeking__text .seeking__wrapper {
+    flex-direction: column;
+  }
+  .seeking__text .seeking__wrapper .first__seek {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.78px;
+  }
+  .seeking__text .seeking__wrapper .second__seek {
+    margin-top: 10px;
+    color: #424242;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+  }
+}
+@media only screen and (min-width: 380px) {
+  .official .official__wrapper .official__card img {
+    min-width: 260px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .official .official__wrapper .official__card img {
+    min-width: 280px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .seeking__text {
+    width: 80%;
+  }
+  .seeking__text .seeking__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */

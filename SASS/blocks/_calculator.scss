@@ -1,0 +1,206 @@
+.calculator {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 15px;
+  border: 2px solid $border;
+  border-radius: 4px;
+  .calculator__wrapper {
+    display: flex;
+    flex-direction: column;
+    .first__calculator {
+      .topper__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        margin: 20px 0px 10px 0px;
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 2px solid #212121;
+          border-radius: 4px;
+        }
+      }
+      .complect {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #212121;
+        border-radius: 2px;
+      }
+      .cal__color {
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      .cal__colors {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        div {
+          width: 20px;
+          height: 20px;
+          background-color: black;
+          border: 1px solid black;
+          border-radius: 4px;
+        }
+        .cal__gray {
+          background-color: #505050;
+        }
+        .cal__lightgray {
+          background-color: #a7a7a7;
+        }
+        .cal__white {
+          background-color: white;
+        }
+        .cal__red {
+          background-color: #e80000;
+        }
+        .cal__blue {
+          background-color: #0054d2;
+        }
+        .cal__green {
+          background-color: #039900;
+        }
+      }
+      .cal__price {
+        margin: 30px 0px 10px 0px;
+        font-size: 15px;
+        span {
+          color: #a7a7a7;
+        }
+      }
+      .small__inform {
+        font-size: 10px;
+      }
+      .cal__checkbox {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0px;
+        input {
+          transform: scale(1.7);
+        }
+        .cal__inform {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.06px;
+        }
+      }
+      .cal__price_select {
+        margin-top: 20px;
+        .price_select__text {
+          font-size: large;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 4px;
+          border: 2px solid #212121;
+        }
+        input[type="range"] {
+          width: 100%;
+          -webkit-appearance: none;
+          appearance: none;
+          background: transparent;
+          outline: none;
+          border: none;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+          background: black;
+          height: 6px;
+          border-radius: 10px;
+        }
+
+        input[type="range"]::-moz-range-track {
+          background: gray;
+          height: 6px;
+          border-radius: 10px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 14px;
+          height: 14px;
+          background: black;
+          border-radius: 50%;
+          cursor: pointer;
+          margin-top: -4px;
+        }
+      }
+    }
+    .second__calculator {
+      padding: 15px;
+      background-color: black;
+      border-radius: 6px;
+      color: white;
+      .second__cal_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      p {
+        margin-bottom: 4px;
+      }
+      .second__small_inform {
+        font-size: 10px;
+      }
+      .cal__second_hr {
+        margin: 15px 0px;
+      }
+      .submit__cal {
+        width: 100%;
+        padding: 14px;
+        margin: 15px 0px;
+        font-size: 18px;
+        background-color: $second-text;
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      .second__checkbox {
+        display: flex;
+        gap: 10px;
+        align-items: start;
+        .checkbox {
+          transform: scale(1.5);
+        }
+        .checkbox__text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .calculator .calculator__wrapper .first__calculator .topper__inputs {
+    flex-direction: row;
+    input {
+      width: 49%;
+    }
+  }
+ .calculator .calculator__wrapper .second__calculator .second__cal_wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .calculator {
+    .calculator__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      .first__calculator{
+        width: 48%;
+      }
+      .second__calculator{
+        width: 48%;
+      }
+    }
+  }
+}

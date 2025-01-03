@@ -479,7 +479,7 @@ a {
 }
 .official {
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   margin-top: 60px;
   padding: 25px;
 }
@@ -515,7 +515,7 @@ a {
 .official .official__wrapper .official__card .conditionals__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: -100px;
   margin: 10px 0px;
 }
 .official .official__wrapper .official__card .condition {
@@ -586,6 +586,16 @@ a {
   .seeking__text .seeking__wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .seeking__text {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .seeking__text {
+    width: 70%;
   }
 }
 .benefits {
@@ -873,5 +883,52 @@ a {
   }
   .calculator .calculator__wrapper .second__calculator {
     width: 48%;
+  }
+}
+.condition {
+  width: 80%;
+  margin: 0 auto;
+}
+.condition .condition__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.condition .condition__wrapper .first__condition {
+  padding: 20px 10px;
+  border: 2px solid #C7C7C7;
+  border-radius: 4px;
+}
+.condition .condition__wrapper .first__condition img {
+  margin-bottom: 20px;
+}
+.condition .condition__wrapper .first__condition h3 {
+  margin-bottom: 10px;
+}
+.condition .condition__wrapper .first__condition p {
+  margin-bottom: 5px;
+}
+
+.bug {
+  margin-top: 60px;
+}
+
+@media only screen and (min-width: 850px) {
+  .condition .condition__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .condition .condition__wrapper .first__condition {
+    width: 47%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .condition {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .condition {
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */

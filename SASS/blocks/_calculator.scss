@@ -184,7 +184,7 @@
       width: 49%;
     }
   }
- .calculator .calculator__wrapper .second__calculator .second__cal_wrapper{
+  .calculator .calculator__wrapper .second__calculator .second__cal_wrapper {
     display: flex;
     flex-direction: row;
   }
@@ -195,10 +195,10 @@
     .calculator__wrapper {
       flex-direction: row;
       justify-content: space-between;
-      .first__calculator{
+      .first__calculator {
         width: 48%;
       }
-      .second__calculator{
+      .second__calculator {
         width: 48%;
       }
     }

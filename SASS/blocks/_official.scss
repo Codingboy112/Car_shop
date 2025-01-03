@@ -1,6 +1,6 @@
 .official {
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   margin-top: 60px;
   padding: 25px;
   .official__wrapper {
@@ -33,7 +33,7 @@
       .conditionals__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
+        grid-gap: -100px;
         margin: 10px 0px;
       }
       .condition {
@@ -110,5 +110,16 @@
       flex-direction: row;
       justify-content: space-between;
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .seeking__text{
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .seeking__text{
+    width: 70%;
   }
 }

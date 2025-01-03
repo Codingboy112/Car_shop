@@ -1,0 +1,25 @@
+.partners{
+    padding: 20px 0px;
+    background-color: #FAFAFA;
+    .partners__wrapper{
+        overflow: scroll;
+        display: flex;
+        gap: 10px;
+        margin: 0 auto;
+        .partner{
+            padding: 10px;
+            background-color: white;
+
+        }
+    }
+    .partners__wrapper::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .partners__wrapper{
+        justify-content: space-evenly;
+    }
+}
